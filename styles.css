@@ -37,4 +37,49 @@
     align-items: center;
     justify-content: space-between;
     background: #dedee0;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+}
+
+button {
+    background: #727272;
+    outline: none;
+    border: none;
+    padding: 16px 50px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+ul li {
+    list-style: none;
+    font-size: 16px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(images/unchecked-10.png);
+    background-size: cover;
+    background-position: center;
+    top: 6px;
+    left: 8px;
 }
